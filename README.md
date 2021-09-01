@@ -4,8 +4,8 @@ A Terraform module for Vault namespace. This module will create namespace, a man
 ## usage
 ```terraform
 module "vault_namespace_example" {
-    source ="ausmartway/terraform-vault-namespace"
-    version = "0.0.2"
+    source =""ausmartway/namespace/vault""
+    version = "0.0.3"
     name = "example"
 } 
 ```
