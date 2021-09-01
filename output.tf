@@ -1,7 +1,8 @@
 output "vault-namespace" {
-  value = vault_namespace.project-namespace.path
+  value = vault_namespace.namespace.path
 }
 
 output "vault-token" {
-  value = vault_token.project-namespace-admin-token.client_token
+  value = vault_token.namespace-admin-token.client_token
+  sensitive = true
 }
