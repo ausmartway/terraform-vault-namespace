@@ -58,7 +58,7 @@ EOP
 }
 
 resource "vault_token" "namespace-admin-token" {
-  policies        = ["default", vault_policy.namespace-admin-policy.name]
+  policies        = [vault_policy.namespace-admin-policy.name]
   renewable       = true
   no_parent       = true
   ttl             = "768h"
